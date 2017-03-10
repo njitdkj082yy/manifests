@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="stash" 
+	  fetch="ssh://git@acsstash.honeywell.com:7999/autom"
+	   review="" />
+  <default remote="stash" revision="master"/>
+  
+  <project path="lava/cases" name="lava-cases">
+      <copyfile src="docs/readme" dest="lava/cases/readme" />
+  </project>
+  <project path="lava/infrastructure" name="lava-infrastructure"  />
+  <project path="development" name="development"  />
+  <project path="docs" name="docs"  />
+  <project path="lava/android_test" name="lava_android_test"  />
+
+</manifest>
